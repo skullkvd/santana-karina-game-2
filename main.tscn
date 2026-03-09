@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://b56wk4nmsgsdf"]
 
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://cbhb468eduw7k" path="res://scenes/chest.tscn" id="3_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://bcu4o8tfdodee" path="res://scenes/barrel.tscn" id="3_h2yge"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_7dm0k"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -30,7 +32,7 @@ shadow_enabled = true
 transform = Transform3D(17.094343, 0, 0, 0, 0.41999984, 0, 0, 0, 8.676801, 30.209976, 5.4999995, -27.333006)
 
 [node name="Floor" type="CSGBox3D" parent="blockout" unique_id=683600484]
-transform = Transform3D(4.394804, 0, 0, 0, -0.8904767, 0, 0, 0, 11.748362, -1.7665813, -13.933336, 3.1501248)
+transform = Transform3D(4.394804, 0, 0, 0, -0.89047664, 0, 0, 0, 11.748362, -1.7665814, -13.933334, 3.1501248)
 use_collision = true
 size = Vector3(1.4, 1.4, 1)
 
@@ -331,8 +333,21 @@ radius = 0.4
 transform = Transform3D(0.12959996, 0, 0, 0, 0.048, 0, 0, 0, 0.36, 0.18913792, -9.990777, -0.2197802)
 radius = 0.4
 
+[node name="CSGBox3D34" type="CSGBox3D" parent="blockout" unique_id=815774934]
+transform = Transform3D(0.058498885, 0, 0, 0, 2.3808181, 0, 0, 0, 0.11524985, -0.012283802, 11.309606, 0.06142831)
+size = Vector3(18.2, 0.1, 16.2)
+
+[node name="CSGBox3D35" type="CSGBox3D" parent="blockout" unique_id=776255348]
+transform = Transform3D(0.058498885, 0, 0, 0, 2.380622, 0, 0, 0, 0.11524985, -0.012283802, 5.7149725, 0.9776631)
+size = Vector3(18.2, 4.6, 0.3)
+
+[node name="CSGBox3D36" type="CSGBox3D" parent="blockout/CSGBox3D35" unique_id=162984421]
+transform = Transform3D(1, 0, 0, 0, 0.9999691, 0, 0, 0, 1, -6.75, -0.8499875, -0.050006866)
+operation = 2
+size = Vector3(2.3, 2.9, 1.8000001)
+
 [node name="ProtoController" parent="." unique_id=1274131280 instance=ExtResource("1_ig7tw")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.7000003, -0.1, -10.900001)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.8, 4.7683716e-07, -13.100002)
 
 [node name="Lights" type="Node3D" parent="." unique_id=1541063122]
 
@@ -453,3 +468,9 @@ light_color = Color(0.79, 0.75445, 0.6478, 1)
 light_energy = 11.297
 shadow_enabled = true
 spot_range = 89.285
+
+[node name="Chest" parent="." unique_id=705553322 instance=ExtResource("3_1bvp3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.133152, -0.09020114, -32.347992)
+
+[node name="RigidBody3D" parent="." unique_id=1527402892 instance=ExtResource("3_h2yge")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.279049, 2.1622834, -32.396645)

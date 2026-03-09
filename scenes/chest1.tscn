@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://den8ogsjonrx5"]
+
+[ext_resource type="PackedScene" uid="uid://cg0cm8bh1xx4n" path="res://models/chest_gold/chest_gold.glb" id="1_2i1f6"]
+
+[node name="chest" type="Node3D" unique_id=1286212841]
+
+[node name="chest_gold2" parent="." unique_id=310794639 instance=ExtResource("1_2i1f6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1, 0, -0.1)
+
+[node name="chest_gold_lid" parent="chest_gold2/chest_gold" parent_id_path=PackedInt32Array(310794639, 1076082181) index="0" unique_id=442469157]
+transform = Transform3D(1, 0, 0, 0, 0.17364822, 0.9848077, 0, -0.9848077, 0.17364822, 0, 0.5, -0.56488323)
+
+[editable path="chest_gold2"]
