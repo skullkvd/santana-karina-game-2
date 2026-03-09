@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://cha26oqplrtla"]
+
+[ext_resource type="PackedScene" uid="uid://xfepn58qtvcq" path="res://scenes/floor_wood.tscn" id="1_6l25v"]
+
+[node name="floor2" type="Node3D" unique_id=768635963]
+
+[node name="floor_wood" parent="." unique_id=11875846 instance=ExtResource("1_6l25v")]

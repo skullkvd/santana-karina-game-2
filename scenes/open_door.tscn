@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://dcyx78susn4l7"]
+
+[ext_resource type="PackedScene" uid="uid://mmado5rfbxm0" path="res://models/building/wall_doorway.glb" id="1_vkoii"]
+
+[node name="open_door" type="Node3D" unique_id=602889690]
+
+[node name="wall_doorway2" parent="." unique_id=1760190440 instance=ExtResource("1_vkoii")]
+
+[node name="wall_doorway_door" parent="wall_doorway2/wall_doorway" parent_id_path=PackedInt32Array(1760190440, 365954240) index="0" unique_id=419137023]
+transform = Transform3D(-0.49999994, 0, 0.86602545, 0, 1, 0, -0.86602545, 0, -0.49999994, -0.8200989, 0, 0)
+
+[editable path="wall_doorway2"]
